@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 // MateriContentPage: hanya menampilkan MATERI
-// Game Quiz → QuizGamezContentPage (route /quiz-gamez/:topic/:subtopic)
 // Latihan Mandiri → LatihanMandiriContentPage (route /latihan-mandiri/:topic/:subtopic)
 import Starfield from "@/components/Starfield";
 import PageNavigation from "@/components/PageNavigation";

@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Starfield from "@/components/Starfield";
 import {
-  Gamepad2,
   Info,
   BookMarked,
   Heart,
@@ -21,7 +20,6 @@ import { playPopSound } from "@/hooks/useAudio";
 
 const menuItems = [
   { label: "PETUNJUK", icon: Info, path: "/petunjuk", desc: "Panduan penggunaan" },
-  { label: "GAME QUIZ", icon: Gamepad2, path: "/quiz-gamez", desc: "Quiz berdasarkan materi" },
   { label: "LATIHAN MANDIRI", icon: GraduationCap, path: "/latihan-mandiri", desc: "Latihan soal per topik kelas 7, 8, dan 9" },
   { label: "KALKULATOR SCIENTIFIC", icon: Calculator, path: "/kalkulator-scientific", desc: "Hitung cepat dengan kalkulator scientific" },
   { label: "VIDEO PEMBELAJARAN", icon: PlayCircle, path: "/video-pembelajaran", desc: "Belajar melalui video interaktif" },

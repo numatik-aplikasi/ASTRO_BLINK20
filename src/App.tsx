@@ -55,12 +55,11 @@ import PengaturanPage from "./pages/PengaturanPage";
 import TentangAplikasiPage from "./pages/TentangAplikasiPage";
 import KalkulatorScientificPage from "./pages/KalkulatorScientificPage";
 import VideoPembelajaranPage from "./pages/VideoPembelajaranPage";
-import QuizGamezPage from "./pages/QuizGamezPage";
-import QuizGamezBangunRuangSisiDatarPage from "./pages/QuizGamezBangunRuangSisiDatarPage";
+
 import KumpulanRumusPage from "./pages/KumpulanRumusPage";
 import KonversiSatuanPage from "./pages/KonversiSatuanPage";
 import MateriContentPage from "./pages/MateriContentPage";
-import QuizGamezContentPage from "./pages/QuizGamezContentPage";
+
 import LatihanMandiriPage from "./pages/LatihanMandiriPage";
 import LatihanMandiriContentPage from "./pages/LatihanMandiriContentPage";
 import NotFound from "./pages/NotFound";
@@ -117,10 +116,7 @@ const AppInner = () => {
       <Route path="/materi/spldv" element={<SPLDVDMenuPage />} />
       {/* Generic sub-topic content routes for all materi */}
       <Route path="/materi/:topic/:subtopic" element={<MateriContentPage />} />
-      {/* Game Quiz content — data terpisah di quizGamezData.ts */}
-      <Route path="/quiz-gamez/:topic/:subtopic" element={<QuizGamezContentPage />} />
-      <Route path="/quiz-gamez" element={<QuizGamezPage />} />
-      <Route path="/quiz-gamez/bangun-ruang-sisi-datar" element={<QuizGamezBangunRuangSisiDatarPage />} />
+
       <Route path="/latihan-mandiri" element={<LatihanMandiriPage />} />
       <Route path="/latihan-mandiri/:topic/:subtopic" element={<LatihanMandiriContentPage />} />
       <Route path="/kumpulan-rumus" element={<KumpulanRumusPage />} />

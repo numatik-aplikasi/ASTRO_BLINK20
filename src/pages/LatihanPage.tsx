@@ -15,7 +15,7 @@ const LatihanPage = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center gradient-space overflow-hidden">
       <Starfield />
-      <PageNavigation prevPath="/quiz-gamez" nextPath="/referensi" />
+      <PageNavigation prevPath="/menu" nextPath="/referensi" />
 
       <div className="relative z-10 max-w-3xl w-full px-4 py-10">
         <h1 className="font-display text-2xl md:text-3xl font-bold text-primary text-glow-cyan mb-2 text-center">
