@@ -39,6 +39,18 @@ const olimpiadeTopics = [
 const OlimpiadePage = () => {
   const navigate = useNavigate();
 
+  const handleTopicClick = (topik: string) => {
+    playPopSound();
+    switch (topik) {
+      case "Bilangan Bulat":
+        navigate("/olimpiade/bilangan-bulat");
+        break;
+      case "Bangun Ruang Sisi Datar":
+        navigate("/quiz");
+        break;
+    }
+  };
+
   return (
     <div className="relative min-h-screen flex flex-col items-center gradient-space overflow-hidden">
       <Starfield />
@@ -56,12 +68,7 @@ const OlimpiadePage = () => {
           {olimpiadeTopics.map((topik, i) => (
             <button
               key={topik}
-              onClick={() => {
-                playPopSound();
-                if (topik === "Bilangan Bulat") {
-                  navigate("/olimpiade/bilangan-bulat");
-                }
-              }}
+              onClick={() => handleTopicClick(topik)}
               className="group flex items-center gap-4 bg-card/80 backdrop-blur border border-border rounded-xl px-5 py-4
                 hover:border-accent/60 transition-all duration-300
                 cursor-pointer text-left animate-slide-up"
@@ -69,7 +76,7 @@ const OlimpiadePage = () => {
             >
               <Trophy className="w-5 h-5 text-accent shrink-0 group-hover:scale-110 transition-transform" />
               <span className="font-body text-sm text-white">{topik}</span>
-              {topik === "Bilangan Bulat" && (
+              {(topik === "Bilangan Bulat" || topik === "Bangun Ruang Sisi Datar") && (
                 <span className="ml-auto text-xs text-accent font-display">📖 BUKA</span>
               )}
             </button>

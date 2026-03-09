@@ -81,8 +81,8 @@ const KubusPage = () => {
               <button onClick={() => setPage(0)} className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                 ← Unsur Kubus
               </button>
-              <button onClick={() => navigate("/quiz")} className="font-display text-sm px-6 py-2 rounded-lg gradient-neon text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer">
-                🚀 Mulai Quiz →
+              <button onClick={() => navigate("/materi")} className="font-display text-sm px-6 py-2 rounded-lg gradient-neon text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer">
+                Selesai →
               </button>
             </div>
           </div>

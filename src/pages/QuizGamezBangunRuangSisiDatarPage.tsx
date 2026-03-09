@@ -6,7 +6,6 @@ import { playPopSound } from "@/hooks/useAudio";
 
 const subTopics = [
   { label: "UNSUR-UNSUR BANGUN RUANG", path: "/materi/kubus" },
-  { label: "KUBUS", path: "/quiz" },
   { label: "BALOK", path: "" },
   { label: "PRISMA", path: "" },
   { label: "LIMAS", path: "" },
