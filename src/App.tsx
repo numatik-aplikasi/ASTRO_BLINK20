@@ -55,7 +55,7 @@ import PengaturanPage from "./pages/PengaturanPage";
 import TentangAplikasiPage from "./pages/TentangAplikasiPage";
 import KalkulatorScientificPage from "./pages/KalkulatorScientificPage";
 import VideoPembelajaranPage from "./pages/VideoPembelajaranPage";
-
+import MateriPage from "./pages/MateriPage";
 import KumpulanRumusPage from "./pages/KumpulanRumusPage";
 import KonversiSatuanPage from "./pages/KonversiSatuanPage";
 import MateriContentPage from "./pages/MateriContentPage";
@@ -81,6 +81,7 @@ const AppInner = () => {
       <Route path="/" element={<WelcomePage />} />
       <Route path="/menu" element={<MenuPage />} />
       <Route path="/petunjuk" element={<PetunjukPage />} />
+      <Route path="/materi" element={<MateriPage />} />
       {/* Materi subtopic routes - used by Quiz Gamez */}
       <Route path="/materi/bilangan-bulat" element={<BilanganBulatMenuPage />} />
       {/* Legacy specific page kept for backwards compat */}
